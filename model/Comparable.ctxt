@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Comparable
+comment0.text=\r\n\ Define\ el\ comportamiento\ de\ menorQue\r\n\r\n\ @author\ Esteban\r\n\ @version\ 11/17/2025\r\n
+comment1.params=obj
+comment1.target=boolean\ menorQue(Comparable)
+comment1.text=\r\n\ valida\ que\ un\ objeto\ sea\ menor\ a\ otro\r\n\r\n\ @param\ \ una\ instancia\ de\ Comparable\r\n\ @return\ \ \ true\ si\ es\ menor\ que\ el\ objeto\ pasado\ como\ parametro\r\n
+numComments=2

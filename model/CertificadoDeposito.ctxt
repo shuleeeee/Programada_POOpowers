@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=CertificadoDeposito
+comment0.text=\r\n\ Subclase\ de\ CertificadoDeposito\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=pMonto\ pPeriodoTotal\ pMonedaInversion
+comment1.target=CertificadoDeposito(double,\ int,\ java.lang.String)
+comment1.text=\r\n\ Crea\ la\ subclase\ CuentaCorriente,\ que\ se\ encarga\ de\ administrar\ el\ tipo\ de\ interes\ segun\ sus\ reglas\r\n
+comment2.params=
+comment2.target=double\ calcularInteres()
+comment2.text=\r\n\ Calcula\ el\ interes\ del\ producto\ bancario\ segun\ las\ reglas\ del\ producto\r\n\r\n\ @return\ \ \ \ el\ porcentaje\ del\ interes\r\n
+comment3.params=
+comment3.target=double\ getRetencionRedimiento()
+comment3.text=\r\n\ Retorna\ el\ monto\ por\ retencion\ del\ rendimiento\r\n\ \r\n\ @return\ \ la\ retencion\ por\ rendimiento\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Retorna\ el\ estado\ del\ objeto\r\n\ \r\n\ @return\ el\ estado\ del\ objeto\r\n
+comment5.params=
+comment5.target=double\ calcularSaldoFinal()
+comment5.text=\r\n\ Calcula\ el\ saldo\ final\ sumando\ el\ monto\ con\ le\ rendimiento\ esperado\ -\ la\ retencion\r\n\ \r\n\ @return\ el\ saldo\ final\r\n
+numComments=6

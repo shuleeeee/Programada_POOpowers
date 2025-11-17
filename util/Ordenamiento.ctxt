@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ordenamiento
+comment1.params=arreglo
+comment1.target=void\ ordenarAscendente(java.util.ArrayList)
+comment1.text=\r\n\ Ordena\ una\ lista\ ascendentemente\r\n\ \r\n\ @param\ \ \ una\ lista\ con\ instancias\ de\ clase\ Comparable\r\n
+numComments=2
