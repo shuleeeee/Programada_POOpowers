@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=CertificadoDeposito
 comment0.text=\r\n\ Subclase\ de\ CertificadoDeposito\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=pMonto\ pPeriodoTotal\ pMonedaInversion\ pClienteAsociado
-comment1.target=CertificadoDeposito(double,\ int,\ java.lang.String,\ Cliente)
+comment1.params=pMonto\ pPeriodoTotal\ pMonedaInversion
+comment1.target=CertificadoDeposito(double,\ int,\ java.lang.String)
 comment1.text=\r\n\ Crea\ la\ subclase\ CuentaCorriente,\ que\ se\ encarga\ de\ administrar\ el\ tipo\ de\ interes\ segun\ sus\ reglas\r\n
 comment2.params=
 comment2.target=double\ calcularInteres()
