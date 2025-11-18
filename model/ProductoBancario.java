@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 /**
  * Super clase que define el comportamiento básico de un producto bancario tradicional
@@ -61,8 +62,8 @@ public abstract class ProductoBancario implements Comparable {
      * @return  un string con la hora actual
      */
     private String establecerHoraRegistro() {
-        DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss"); 
-        return LocalDate.now().format(formatoHora); 
+        DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
+        return LocalTime.now().format(formatoHora);
     }
     
     /**
