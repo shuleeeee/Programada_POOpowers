@@ -25,19 +25,19 @@ public class InversionVista extends ProductoBancario {
         if (periodoTotal < 15) {
             return 0;
         } else if (periodoTotal < 30) {
-            return monedaInversion == "Colones" ? 0.0485 : 0.008;
+            return monedaInversion == "colones" ? 0.0485 : 0.008;
         } else if (periodoTotal < 60) {
-            return monedaInversion == "Colones" ? 0.0494 : 0.0091;
+            return monedaInversion == "colones" ? 0.0494 : 0.0091;
         } else if (periodoTotal < 90) {
-            return monedaInversion == "Colones" ? 0.0523 : 0.0106;
+            return monedaInversion == "colones" ? 0.0523 : 0.0106;
         } else if (periodoTotal < 180) {
-            return monedaInversion == "Colones" ? 0.0581 : 0.0144;
+            return monedaInversion == "colones" ? 0.0581 : 0.0144;
         } else if (periodoTotal < 270) {
-            return monedaInversion == "Colones" ? 0.0883 : 0.0221;
+            return monedaInversion == "colones" ? 0.0883 : 0.0221;
         } else if (periodoTotal < 360) {
-            return monedaInversion == "Colones" ? 0.0869 : 0.0226;
+            return monedaInversion == "colones" ? 0.0869 : 0.0226;
         } else {
-            return monedaInversion == "Colones" ? 0.0869 : 0.024;
+            return monedaInversion == "colones" ? 0.0869 : 0.024;
         }
     }
     
