@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Validaciones
+comment1.params=nombreCliente
+comment1.target=boolean\ validarNombreCliente(java.lang.String)
+comment1.text=\r\n\ Valida\ el\ nombre\ del\ cliente.\r\n
+comment2.params=correoCliente
+comment2.target=boolean\ validarCorreoCliente(java.lang.String)
+comment2.text=\r\n\ Valida\ el\ correo\ electr\u00F3nico.\r\n
+comment3.params=idCliente
+comment3.target=boolean\ validarIdCliente(int)
+comment3.text=\r\n\ Valida\ la\ c\u00E9dula.\r\n
+comment4.params=num1\ num2
+comment4.target=boolean\ validarMenor(double,\ double)
+comment4.text=\r\n\ Valida\ si\ num1\ <\ num2.\r\n
+comment5.params=moneda
+comment5.target=boolean\ validarMoneda(java.lang.String)
+comment5.text=\r\n\ Valida\ monedas\ permitidas\:\ colones\ o\ dolares.\r\n
+comment6.params=monto\ moneda
+comment6.target=boolean\ validarCuentaCorriente(double,\ java.lang.String)
+comment6.text=\r\n\ Validaci\u00F3n\ de\ cuenta\ corriente.\r\n\ M\u00EDnimo\:\ \u20A125,000\r\n
+comment7.params=monto\ periodo\ moneda
+comment7.target=boolean\ validarInversionVista(double,\ int,\ java.lang.String)
+comment7.text=\r\n\ Validaci\u00F3n\ de\ inversi\u00F3n\ vista.\r\n\ -\ M\u00EDnimo\ monto\:\ \u20A1100,000\ o\ $500\r\n\ -\ Plazo\ m\u00EDnimo\:\ 15\ d\u00EDas\r\n
+comment8.params=monto\ periodo\ moneda
+comment8.target=boolean\ validarCertificadoDeposito(double,\ int,\ java.lang.String)
+comment8.text=\r\n\ Validaci\u00F3n\ de\ certificado\ de\ dep\u00F3sito.\r\n\ -\ Plazo\ m\u00EDnimo\ 30\ d\u00EDas\r\n\ -\ Plazo\ 30\u201389\ m\u00EDnimo\ \u20A1100,000\r\n\ -\ Plazo\ >\=\ 90\ m\u00EDnimo\ \u20A150,000\r\n
+numComments=9
