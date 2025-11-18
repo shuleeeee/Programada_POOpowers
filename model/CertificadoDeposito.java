@@ -14,8 +14,8 @@ public class CertificadoDeposito extends ProductoBancario {
     /**
      * Crea la subclase CuentaCorriente, que se encarga de administrar el tipo de interes segun sus reglas
      */
-    public CertificadoDeposito(double pMonto, int pPeriodoTotal, String pMonedaInversion) {
-        super(pMonto, pPeriodoTotal, pMonedaInversion);
+    public CertificadoDeposito(double pMonto, int pPeriodoTotal, String pMonedaInversion, Cliente pClienteAsociado) {
+        super(pMonto, pPeriodoTotal, pMonedaInversion, pClienteAsociado);
         retencionRendimiento = rendimiento * interesRetencion;
     }
 
@@ -25,18 +25,22 @@ public class CertificadoDeposito extends ProductoBancario {
      * @return    el porcentaje del interes
      */
     protected double calcularInteres() {
-        if (monto < 25000) {
+        if (periodoTotal < 30) {
             return 0;        
-        } else if (monto <= 500000) {
-            return 0.01;
-        } else if (monto <= 1000000) {
-            return 0.02;
-        } else if (monto <= 2500000) {
-            return 0.0225;
-        } else if (monto <= 10000000) {
-            return 0.025;
+        } else if (periodoTotal < 60) {
+            return 0.054;
+        } else if (periodoTotal < 90) {
+            return 0.057;
+        } else if (periodoTotal < 150) {
+            return 0.063;
+        } else if (periodoTotal < 180) {
+            return 0.0945;
+        } else if (periodoTotal < 210){
+            return 0.0995;
+        } else if (periodoTotal < 240){
+            return 0.1;
         } else {
-            return 0.0275;
+            return 0.093;
         }
     }
     

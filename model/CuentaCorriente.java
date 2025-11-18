@@ -12,8 +12,8 @@ public class CuentaCorriente extends ProductoBancario {
     /**
      * Crea la subclase CuentaCorriente, que se encarga de administrar el tipo de interes segun sus reglas
      */
-    public CuentaCorriente(double pMonto, int pPeriodoTotal, String pMonedaInversion) {
-        super(pMonto, pPeriodoTotal, pMonedaInversion);
+    public CuentaCorriente(double pMonto, int pPeriodoTotal, String pMonedaInversion, Cliente pClienteAsociado) {
+        super(pMonto, pPeriodoTotal, pMonedaInversion, pClienteAsociado);
     }
 
     /**

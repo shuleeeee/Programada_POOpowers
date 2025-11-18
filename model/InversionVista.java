@@ -12,8 +12,8 @@ public class InversionVista extends ProductoBancario {
     /**
      * Crea la subclase InversionVista, que se encarga de administrar el tipo de interes segun sus reglas
      */
-    public InversionVista(double pMonto, int pPeriodoTotal, String pMonedaInversion) {
-        super(pMonto, pPeriodoTotal, pMonedaInversion);
+    public InversionVista(double pMonto, int pPeriodoTotal, String pMonedaInversion, Cliente pClienteAsociado) {
+        super(pMonto, pPeriodoTotal, pMonedaInversion, pClienteAsociado);
     }
 
     /**

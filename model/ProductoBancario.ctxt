@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=ProductoBancario
 comment0.text=\r\n\ Super\ clase\ que\ define\ el\ comportamiento\ b\u00E1sico\ de\ un\ producto\ bancario\ tradicional\r\n\r\n\ @author\ Esteban\ Ramirez\ Arrieta\r\n\ @version\ 11/16/2025\r\n
-comment1.params=pMonto\ pPeriodoTotal\ pMonedaInversion
-comment1.target=ProductoBancario(double,\ int,\ java.lang.String)
+comment1.params=pMonto\ pPeriodoTotal\ pMonedaInversion\ pClienteAsociado
+comment1.target=ProductoBancario(double,\ int,\ java.lang.String,\ Cliente)
 comment1.text=\r\n\ Crea\ una\ instancia\ de\ un\ producto\ bancario\r\n
 comment2.params=
 comment2.target=double\ calcularRendimiento()

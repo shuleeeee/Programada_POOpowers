@@ -16,13 +16,15 @@ public abstract class ProductoBancario implements Comparable {
     protected double rendimiento;
     protected String fechaRegistro;
     protected String horaRegistro;
+    private Cliente clienteAsociado;
 
     /**
      * Crea una instancia de un producto bancario
      */
-    public ProductoBancario(double pMonto, int pPeriodoTotal, String pMonedaInversion) {
+    public ProductoBancario(double pMonto, int pPeriodoTotal, String pMonedaInversion, Cliente pClienteAsociado) {
         monto = pMonto;
         periodoTotal = pPeriodoTotal;
+        clienteAsociado = pClienteAsociado;
         monedaInversion = pMonedaInversion;
         interes = calcularInteres();
         rendimiento = calcularRendimiento();
