@@ -1,23 +1,18 @@
 package view.cli;
 
 import java.util.Scanner;
-import model.P;
+import model.Banco;
 import model.Cliente;
 
 public class CLIBanco {
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(new java.io.InputStreamReader(System.in));
-        
-        System.out.flush();
-        try { Thread.sleep(100); } catch (Exception e) {}
-
+        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el nombre del banco: ");
         String nombre = sc.nextLine();
 
-        P banco = new P(nombre);
-
+        Banco banco = new Banco(nombre);
+        Cliente clienteActual = null;
         int opcion = -1;
 
         while (opcion != 0) {
@@ -31,16 +26,10 @@ public class CLIBanco {
             System.out.println("0. Salir");
 
             System.out.print("\nSeleccione una opción: ");
-            
-            System.out.flush();
-            try { Thread.sleep(100); } catch (Exception e) {}
-
-            
             opcion = sc.nextInt();
             sc.nextLine();
 
             switch (opcion) {
-
                 case 1:
                     System.out.print("ID (9 dígitos): ");
                     int id = sc.nextInt();
@@ -60,7 +49,13 @@ public class CLIBanco {
                     int idEliminar = sc.nextInt();
                     sc.nextLine();
 
-                    banco.eliminarCliente(idEliminar);
+                    System.out.print("¿Está seguro que desea eliminar este cliente? (s/n): ");
+                    String confirm = sc.nextLine();
+                    if (confirm.equalsIgnoreCase("s")) {
+                        banco.eliminarCliente(idEliminar);
+                    } else {
+                        System.out.println("Operación cancelada.");
+                    }
                     break;
 
                 case 3:
@@ -68,17 +63,21 @@ public class CLIBanco {
                     int idConsulta = sc.nextInt();
                     sc.nextLine();
 
-                    Cliente c = banco.consultarClienteId(idConsulta);
-
-                    if (c == null) {
+                    clienteActual = banco.consultarClienteId(idConsulta);
+                    if (clienteActual == null) {
                         System.out.println("Cliente no encontrado.");
                     } else {
                         System.out.println("\nCliente encontrado:");
-                        System.out.println(c);
+                        System.out.println(clienteActual);
                     }
                     break;
 
                 case 4:
+                    if (clienteActual == null) {
+                        System.out.println("Debe consultar un cliente antes de registrar un producto.");
+                        break;
+                    }
+
                     System.out.print("Tipo de producto (corriente, pactada, certificado): ");
                     String tipo = sc.nextLine();
 
