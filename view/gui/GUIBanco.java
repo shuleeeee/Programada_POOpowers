@@ -145,7 +145,7 @@ public class GUIBanco extends JFrame {
             try {
                 double monto = Double.parseDouble(montoStr);
                 int periodo = Integer.parseInt(periodoStr);
-                banco.registrarProductoBancario(tipo, monto, periodo, moneda);
+                banco.registrarProductoBancario(tipo, monto, periodo, moneda, clienteActual);
                 areaSalida.append("Producto registrado para cliente " + clienteActual.getNombre() + ".\n");
             } catch (Exception ex) {
                 areaSalida.append("Error registrando producto.\n");

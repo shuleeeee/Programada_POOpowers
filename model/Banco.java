@@ -115,7 +115,7 @@ public class Banco {
                 return;
             }
 
-            nuevo = new CuentaCorriente(monto, periodo, moneda);
+            nuevo = new CuentaCorriente(monto, periodo, moneda, clienteAsociado);
         }
 
         else if (tipoCuenta.equals("pactada")) {
@@ -125,7 +125,7 @@ public class Banco {
                 return;
             }
 
-            nuevo = new InversionVista(monto, periodo, moneda);
+            nuevo = new InversionVista(monto, periodo, moneda, clienteAsociado);
         }
 
         else if (tipoCuenta.equals("certificado")) {
@@ -135,7 +135,7 @@ public class Banco {
                 return;
             }
 
-            nuevo = new CertificadoDeposito(monto, periodo, moneda);
+            nuevo = new CertificadoDeposito(monto, periodo, moneda, clienteAsociado);
         }
 
         else {

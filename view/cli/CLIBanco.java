@@ -91,7 +91,7 @@ public class CLIBanco {
                     System.out.print("Moneda (colones / dolares): ");
                     String moneda = sc.nextLine();
 
-                    banco.registrarProductoBancario(tipo, monto, periodo, moneda);
+                    banco.registrarProductoBancario(tipo, monto, periodo, moneda, clienteActual);
                     break;
 
                 case 5:
