@@ -41,7 +41,7 @@ public abstract class ProductoBancario implements Comparable {
     private double calcularRendimiento() {
         double sumaRendimiento = 0;
         for (int i = 1; i <= periodoTotal; i++){
-            rendimiento += monto * (interes / 360);
+            sumaRendimiento += monto * (interes / 360);
         }
         return sumaRendimiento;
     }
