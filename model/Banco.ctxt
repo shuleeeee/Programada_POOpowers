@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Banco
+comment0.text=\r\n\ Administra\ clientes\ y\ registro\ de\ productos.\r\n
+comment1.params=pNombreBanco
+comment1.target=Banco(java.lang.String)
+comment1.text=\r\n\ Constructor\ del\ banco.\r\n
+comment2.params=id\ nombreCliente\ correoElectronico
+comment2.target=void\ agregarCliente(int,\ java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Agrega\ un\ cliente\ al\ banco.\r\n
+comment3.params=id
+comment3.target=void\ eliminarCliente(int)
+comment3.text=\r\n\ Elimina\ un\ cliente\ seg\u00FAn\ su\ ID.\r\n
+comment4.params=id
+comment4.target=Cliente\ consultarClienteId(int)
+comment4.text=\r\n\ Consulta\ un\ cliente\ por\ su\ ID.\r\n
+comment5.params=tipoCuenta\ monto\ periodo\ moneda\ clienteAsociado
+comment5.target=void\ registrarProductoBancario(java.lang.String,\ double,\ int,\ java.lang.String,\ Cliente)
+comment5.text=\r\n\ Registra\ un\ producto\ bancario.\r\n
+comment6.params=
+comment6.target=void\ consultarProductosBancarios()
+comment6.text=\r\n\ Consulta\ los\ productos\ registrados.\r\n
+comment7.params=
+comment7.target=void\ consultarClientes()
+comment7.text=\r\n\ Consulta\ los\ clientes\ del\ banco.\r\n
+numComments=8
