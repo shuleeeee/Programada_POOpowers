@@ -6,7 +6,7 @@ public class Ordenamiento {
     /**
      * Ordena una lista ascendentemente
      * 
-     * @param   una lista con instancias de clase Comparable
+     * @param arreglo una lista con instancias de clase Comparable
      */
     public static void ordenarAscendente(ArrayList<Comparable> arreglo) { 
     boolean huboIntercambio; 

@@ -11,7 +11,7 @@ public interface Comparable {
     /**
      * valida que un objeto sea menor a otro
      *
-     * @param  una instancia de Comparable
+     * @param  obj una instancia de Comparable
      * @return   true si es menor que el objeto pasado como parametro
      */
     boolean menorQue(Comparable obj);

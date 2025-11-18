@@ -19,9 +19,9 @@ public class Cliente implements Comparable{
     /**
      * Crea una nueva instancia de Cliente con un codigo unico y id unico
      * 
-     * @param el id del cliente
-     * @param el nombre completo del cliente
-     * @param el correo electronico del cliente
+     * @param pID el id del cliente
+     * @param pNombre el nombre completo del cliente
+     * @param pCorreoElectronico el correo electronico del cliente
      */
     public Cliente(int pId, String pNombre, String pCorreoElectronico) {
         id = pId;
@@ -71,7 +71,7 @@ public class Cliente implements Comparable{
     /**
      * Verifica que otro objeto de la misma clase tenga un nombre mayor que la instancia
      *
-     * @param    un objeto de tipo Comparable
+     * @param obj un objeto de tipo Comparable
      */
     public boolean menorQue(Comparable obj) {
         Cliente otro = (Cliente) obj;  
